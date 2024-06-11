@@ -101,11 +101,11 @@ textarea {
 .carousel-container {
   background-color: rgba(3, 66, 85, 0.5);
   padding: 75px 75px;
-  position: relative;
+  position: center;
   width: 80%;
   overflow: hidden;
   background: rgb(0, 0, 0);
-  border-radius: 10px;
+  border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -116,10 +116,10 @@ textarea {
 
 .carousel-card {
   min-width: 100%;
+  background-color: rgba(3, 66, 85, 0.5);
   box-sizing: border-box;
-  padding: 20px;
+  padding: 75px;
   text-align: center;
-  border-right: 1px solid #000000;
 }
 
 .carousel-card:last-child {
@@ -150,8 +150,12 @@ button.prev:hover, button.next:hover {
 }
 .about-me{
   /*background-color: rgba(80, 80, 80, 0.7);  */
-  background-color: rgba(3, 66, 85, 0.5);
   padding: 75px 75px;
+  background-color: rgba(3, 66, 85, 0.5);
   text-align: left;
   /*font-family: 'Courier New', Courier, monospace;*/
+}
+.contact-me{
+  background-color: rgba(3, 66, 85, 0.5);
+  text-align: left;
 }
