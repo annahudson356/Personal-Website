@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <title>Anna Hudson</title>
+    <script src="script.js"></script>
+    <title>Anna Hudson | CS @ UF</title>
   </head>
   <body>
     <span>
@@ -12,9 +13,8 @@
       
         <ul class = "navbar">
           <li style = "float:left;"><a href="index.html">Anna Hudson</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
-          <li><a href="experience.html">Experience</a></li>
+          <li><a href="experience.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
       
         </ul> 
@@ -22,7 +22,7 @@
     </span>
     
     <div class="intro">
-      <div style = "margin: 65px">
+      <div style = "margin: 45px">
         <p class="big-text">Anna Hudson</p>
         <h3 style = "font: Arial;">A current student at The University of Florida majoring in computer science, hoping one day to work in cybersecurity. Click below to learn more! </h3>
         <a href="resume.html" class ="resume-button">Resume</a>
@@ -30,6 +30,33 @@
   
     </div>
     
+    <div class="carousel-container">
+      <div class="carousel">
+          <div class="carousel-card">
+              <h3>Personal Website</h3>
+              <p>Hey! You made it! This website is an WIP and is my first personal project ever!</p>
+          </div>
+          <div class="carousel-card">
+              <h3>Movie Matchmaker</h3>
+              <p>Made as part of a Data Structures and Algorithms class! Collaborated with 2 colleagues 
+                in generating an application that would help select a movie based on the criteria the user entered.</p>
+          </div>
+          <div class="carousel-card">
+            <h3>Like what you see?</h3>
+            <p>Check out the Projects page for a more!</p>
+            <a class = "resume-button" href = "experience.html">See More!</a>
+          </div>
+        </div>
+      </div>
+      <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+      <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+  </div>
+  <div class = "about-me">
+    <p class="big-text">Who is Anna?</p>
+    <p>Anna is a sophomore majoring in Computer Science at The University of Florida! When not studying for her exams,
+      she enjoys playing the piano and exploring nature wherever she can find it!</p>
+  </div>
+  
     <footer>
       <div class = "navbar">
         <ul class = "navbar">
