@@ -1,17 +1,32 @@
-let currentIndex = 0;
 
-function moveCarousel(direction) {
-    const carousel = document.querySelector('.carousel');
-    const totalCards = document.querySelectorAll('.carousel-card').length;
+let current = 0;
 
-    currentIndex += direction;
-
-    if (currentIndex < 0) {
-        currentIndex = totalCards - 1;
-    } else if (currentIndex >= totalCards) {
-        currentIndex = 0;
+function showSlide(index) {
+    const slides = document.querySelectorAll('.carousel-item');
+    if (index >= slides.length) {
+        current = 0;
+    } else if (index < 0) {
+        current = slides.length - 1;
+    } else {
+        current = index;
     }
 
-    const offset = -currentIndex * 100;
-    carousel.style.transform = `translateX(${offset}%)`;
+    const offset = -currentSlide * 100;
+    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+
+    slides.forEach((slide, idx) => {
+        slide.classList.toggle('active', idx === current);
+    });
 }
+
+function nextSlide() {
+    showSlide(current + 1);
+}
+
+function prevSlide() {
+    showSlide(current - 1);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(current);
+});
