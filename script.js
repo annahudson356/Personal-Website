@@ -35,7 +35,7 @@ function startAutoCycle() {
 function resetAutoCycle() {
     clearTimeout(autoCycleTimeout);
     clearInterval(autoCycleInterval);
-    autoCycleTimeout = setTimeout(startAutoCycle, 5000);
+    autoCycleTimeout = setTimeout(startAutoCycle, 10000);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
