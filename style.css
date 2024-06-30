@@ -8,8 +8,12 @@
 }
 .intro{
   background-color: #1E1E1E;
+  display: flex;
   width: 1440px;
-  height: 1024px; 
+  height: 1024px;
+  padding: 115px 185px 701px 950px;
+  justify-content: flex-end;
+  align-items: center; 
 }
 .icon{
   width: 60px;
@@ -37,8 +41,11 @@
 
 .about{
   background: #73C2BE; 
-  width: 1440px;
-  height: 1024px; 
+  display: inline-flex;
+  height: 1024px;
+  padding: 125px 115px 733px 725px;
+  justify-content: flex-end;
+  align-items: center; 
 }
 
 .about-heading{
@@ -65,8 +72,11 @@
 }
 .projects{
   background: #776885; 
+  display: flex;
   width: 1440px;
-  height: 1024px; 
+  height: 1024px;
+  padding: 79px 870px 795px 70px;
+  align-items: center; 
 }
 .carousel {
   position: relative;
@@ -119,6 +129,7 @@
   padding: 115px 185px 701px 950px;
   justify-content: flex-end;
   align-items: center; 
+  background: #5F1A37; 
 }
 .skills-header{
   width: 305px;
@@ -132,8 +143,12 @@
   line-height: normal; 
 }
 .contact{
+  display: flex;
   width: 1440px;
-  height: 1024px; 
+  height: 1024px;
+  padding: 115px 185px 701px 950px;
+  justify-content: flex-end;
+  align-items: center; 
   background: #04030F;
 }
 .learn-more{
