@@ -17,9 +17,12 @@ body{
   align-items: center; 
 }
 .icon{
-  width: 60px;
-  height: 60px;
-  flex-shrink: 0;
+  height: 100px;
+  padding: 20px;
+  width: 100px;
+  max-width: 5%;
+  max-height: 5%;
+  float: right;
 }
 .main-heading{
   width: 100%;
